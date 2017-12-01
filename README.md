@@ -1,6 +1,6 @@
 # SimpleNet-Keras
 
-SimpleNet paper implementation in keras. This is the implementation for the **SimpleNet** model architecture described in [this paper](https://arxiv.org/ftp/arxiv/papers/1608/1608.06037.pdf). The original implementation in Caffe can be found [here](https://github.com/Coderx7/SimpleNet).
+SimpleNet paper implementation in keras. This is the implementation for the **SimpleNet** model architecture described in [this paper](https://arxiv.org/ftp/arxiv/papers/1608/1608.06037.pdf) for the CIFAR10 dataset. The original implementation in Caffe can be found [here](https://github.com/Coderx7/SimpleNet).
 
 ## Results
 
