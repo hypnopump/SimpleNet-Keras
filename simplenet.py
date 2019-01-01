@@ -38,7 +38,7 @@ datagen = ImageDataGenerator(
 datagen.fit(x_train)
 
 # Define Model architecture
-def create_model(s = 2, weight_decay = 1e-2):
+def create_model(s = 2, weight_decay = 1e-2, act="relu"):
     model = Sequential()
 
     # Block 1
@@ -136,8 +136,8 @@ def create_model(s = 2, weight_decay = 1e-2):
     return model
 
 if __name__ == "__main__":
-	# Prepare for training
-	model = create_model()
+	# Prepare for training 
+	model = create_model(act="relu")
 	batch_size = 128
 	epochs = 25
 	train = {}
