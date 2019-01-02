@@ -21,3 +21,10 @@ Then the only remaining thing is to pass the function as the `act` parameter the
 ```python
 model = create_model(act=custom_act)
 ```
+
+## Meta
+ 
+* **Author's GitHub Profile**: [Eric Alcaide](https://github.com/EricAlcaide/)
+* **Twitter**: [@eric_alcaide](https://twitter.com/eric_alcaide)
+* **LinkedIn**: [@ericalcaide](https://www.linkedin.com/in/ericalcaide/)
+* **Email**: ericalcaide1@gmail.com
