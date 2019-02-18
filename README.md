@@ -4,7 +4,7 @@ SimpleNet paper implementation in keras (a [pretrained](#pretrained-model)) mode
 
 ## Results
 
-The paper describes a top accuracy of 95.32% on Cifar10 (Krizhevsky & Hinton, 2009), although I just managed to get it past 93% following all the indications in the paper and their training and model logs.
+The paper describes a top accuracy of 95.32% on Cifar10 (Krizhevsky & Hinton, 2009), although I just managed to get it past 94% following all the indications in the paper and their training and model logs.
 
 It takes a little bit long to train and, although it's proposed as a Simple Network, it can be too big for some GPUs with less than 3GB of memory. For that reason, I recommend to train them on Amazon Web Services (AWS) or any other cloud platform such as Alibaba Cloud or Google Cloud. 
 
@@ -24,7 +24,8 @@ model = create_model(act=custom_act)
 
 ## Pretrained Model
 
-The model was trained as described in the `simplenet_training.ipynb` notebook. It has been saved using keras `model.save()` function. In order to load the model in your own code: 
+The model was trained as described in the `simplenet_training.ipynb` notebook and achieved 94% accuracy with 125 epochs. The learning rate adjustment performed in the original model (Caffe implementation) was not respected. Here the model was only trained for 125 instead of 200 and learning rates were different (the change was done aiming to speed up training). It has been saved using keras `model.save()` function. 
+To load the model in your own code: 
 
 ```python
 from keras.models import load_model
