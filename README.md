@@ -1,6 +1,6 @@
 # SimpleNet-Keras
 
-SimpleNet paper implementation in keras. This is the implementation for the **SimpleNet** model architecture described in [this paper](https://arxiv.org/ftp/arxiv/papers/1608/1608.06037.pdf) for the CIFAR10 dataset. The original implementation in Caffe can be found [here](https://github.com/Coderx7/SimpleNet).
+SimpleNet paper implementation in keras (a [pretrained](#pretrained-model)) model is provided). This is the implementation for the **SimpleNet** model architecture described in [this paper](https://arxiv.org/ftp/arxiv/papers/1608/1608.06037.pdf) for the CIFAR10 dataset. The original implementation in Caffe can be found [here](https://github.com/Coderx7/SimpleNet).
 
 ## Results
 
@@ -20,6 +20,16 @@ Then the only remaining thing is to pass the function as the `act` parameter the
 
 ```python
 model = create_model(act=custom_act)
+```
+
+## Pretrained Model
+
+The model was trained as described in the `simplenet_training.ipynb` notebook. It has been saved using keras `model.save()` function. In order to load the model in your own code: 
+
+```python
+from keras.models import load_model
+
+model = load_model("simplenet_trained_model.h5")
 ```
 
 ## Meta
